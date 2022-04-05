@@ -1,0 +1,29 @@
+.header {
+  margin: 45px 0 0 0;
+  padding: 0;
+  border-bottom: 1px solid #545454;
+  width: 100%;
+}
+
+.header__image {
+  width: 173px;
+  margin: 0 0 41px 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .header__image {
+    margin: 0 0 41px 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 28px 0 0 0;
+  }
+
+  .header__image {
+    max-width: 126px;
+    padding: 0;
+  }
+}
