@@ -31,7 +31,6 @@
   margin: 0;
   justify-content: space-between;
   align-items: center;
-
   background-color: #ffffff;
   color: #000000;
   border-radius: 0 0 10px 10px;
@@ -52,9 +51,24 @@
 }
 
 .photo-grid__card-label-icon {
-  margin: 0;
-  padding-right: 18px;
-  width: 21px;
+  margin: 0 30px 0 0;
+  min-width: 21px;
+  height: 21px;
+  background-image: url(../images/card_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  transition: linear 0.5s;
+}
+
+.photo-grid__card-label-icon:hover {
+  background-image: url(../images/card_icon_hover.svg);
+  cursor: pointer;
+}
+
+.photo-grid__card-label-icon-active {
+  background-image: url(../images/card_icon_active.svg);
 }
 
 @media screen and (max-width: 980px) {

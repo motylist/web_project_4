@@ -33,11 +33,11 @@
             <div class="profile__title-container">
               <div class="profile__title-itmes">
                 <h1 class="profile__title">Jacques Cousteau</h1>
-                <input
-                  class="profile__edit-button"
-                  type="image"
+                <button
+                  class="profile__button profile__button_type_edit"
+                  type="button"
                   src="./images/edit_button.svg"
-                />
+                ></button>
               </div>
               <p class="profile__subtitle">Explorer</p>
             </div>
@@ -56,11 +56,10 @@
             />
             <div class="photo-grid__card-label-container">
               <h2 class="photo-grid__card-label-text">Yosemite Valley</h2>
-              <img
-                src="./images/card_icon.svg"
-                alt="heart icon"
+              <button
+                type="button"
                 class="photo-grid__card-label-icon"
-              />
+              ></button>
             </div>
           </div>
           <div class="photo-grid__card">
@@ -71,11 +70,10 @@
             />
             <div class="photo-grid__card-label-container">
               <h2 class="photo-grid__card-label-text">Lake Louise</h2>
-              <img
-                src="./images/card_icon.svg"
-                alt="heart icon"
+              <button
+                type="button"
                 class="photo-grid__card-label-icon"
-              />
+              ></button>
             </div>
           </div>
           <div class="photo-grid__card">
@@ -86,11 +84,10 @@
             />
             <div class="photo-grid__card-label-container">
               <h2 class="photo-grid__card-label-text">Bald Mountains</h2>
-              <img
-                src="./images/card_icon.svg"
-                alt="heart icon"
+              <button
+                type="button"
                 class="photo-grid__card-label-icon"
-              />
+              ></button>
             </div>
           </div>
           <div class="photo-grid__card">
@@ -101,11 +98,10 @@
             />
             <div class="photo-grid__card-label-container">
               <h2 class="photo-grid__card-label-text">Latemar</h2>
-              <img
-                src="./images/card_icon.svg"
-                alt="heart icon"
+              <button
+                type="button"
                 class="photo-grid__card-label-icon"
-              />
+              ></button>
             </div>
           </div>
           <div class="photo-grid__card">
@@ -116,11 +112,10 @@
             />
             <div class="photo-grid__card-label-container">
               <h2 class="photo-grid__card-label-text">Vanoise National park</h2>
-              <img
-                src="./images/card_icon.svg"
-                alt="heart icon"
+              <button
+                type="button"
                 class="photo-grid__card-label-icon"
-              />
+              ></button>
             </div>
           </div>
           <div class="photo-grid__card">
@@ -131,19 +126,19 @@
             />
             <div class="photo-grid__card-label-container">
               <h2 class="photo-grid__card-label-text">Lago di Braies</h2>
-              <img
-                src="./images/card_icon.svg"
-                alt="heart icon"
+              <button
+                type="button"
                 class="photo-grid__card-label-icon"
-              />
+              ></button>
             </div>
           </div>
         </section>
       </main>
-      <div class="modal">
-        <div class="modal__container">
+
+      <div class="modal modal__opened">
+        <div class="modal__items">
           <button class="modal__button modal__button_type_close"></button>
-          <form class="modal__form form" action="">
+          <form class="modal__form form" name="edit-profile-form" action="">
             <h2 class="modal__title">Edit profile</h2>
             <fieldset class="form__fieldset">
               <input
@@ -166,5 +161,6 @@
         </div>
       </div>
     </div>
+    <script src="./script/index.js"></script>
   </body>
 </html>
