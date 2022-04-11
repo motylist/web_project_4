@@ -27,4 +27,4 @@ In addition the page employs flex and grid layout modules in order to position i
 
 Here is the link to the published page on GitHub Pages:
 
-
+https://motylist.github.io/web_project_4/
