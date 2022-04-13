@@ -8,6 +8,8 @@
 .profile__pic {
   border-radius: 50%;
   width: 120px;
+  height: 120px;
+  max-height: 120px;
   margin: 0;
 }
 
@@ -21,6 +23,9 @@
   position: relative;
 }
 
+.profile__title-container{
+  max-width: 415px;
+}
 .profile__title-itmes {
   display: flex;
   margin: 0;
@@ -31,6 +36,9 @@
   line-height: 48px;
   margin: 0;
   padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__subtitle {
@@ -39,11 +47,14 @@
   line-height: 22px;
   margin: 18px 0 0 0;
   padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__button {
   background-repeat: none;
-  background-color: black;
+  background-color: transparent;
   background-size: cover;
   border: none;
   transition: linear 0.5s;
@@ -54,6 +65,7 @@
   width: 24px;
   height: 24px;
   margin: 15px 0 0 18px;
+  padding: 0 24px 0 0;
 }
 
 .profile__button_type_edit:hover {
@@ -74,7 +86,7 @@
 
 @media screen and (max-width: 980px) {
   .profile {
-    padding: 0 17px 0 17px;
+    padding: 0 19px 0 19px;
   }
 }
 
@@ -124,7 +136,11 @@
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 36px auto;
+    margin: 36px 19px;
+    background-image: url(../images/add_button_small.svg);
+  }
+
+  .profile__button_type_add:hover {
     background-image: url(../images/add_button_small.svg);
   }
 }
