@@ -34,7 +34,7 @@
   transition: linear 0.5s;
 }
 
-.modal__button_type_close:hover {
+.modal__button:hover {
   background-image: url(../images/close_Icon_hover.svg);
   cursor: pointer;
 }

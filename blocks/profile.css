@@ -103,6 +103,10 @@
     margin: 26px auto 0;
   }
 
+  .profile__title-container{
+    max-width: 282px;
+  }
+
   .profile__title-itmes {
     align-items: center;
   }
@@ -118,7 +122,7 @@
     height: 18px;
     background-size: cover;
     margin: 0 0 0 10px;
-    padding: 0;
+    padding: 0 18px 0 0;
   }
 
   .profile__subtitle {

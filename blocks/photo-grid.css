@@ -36,12 +36,13 @@
   color: #000000;
   border-radius: 0 0 10px 10px;
   width: 100%;
-  min-height: 79px;
+  padding: 25px 0;
+  
 }
 
 .photo-grid__card-label-text {
   margin: 0;
-  padding-left: 21px;
+  padding: 0 0 0 21px;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
@@ -49,6 +50,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  
 }
 
 .photo-grid__card-label-icon {
@@ -76,5 +78,11 @@
   .photo-grid {
     padding: 0 17px;
     grid-auto-rows: minmax(361px, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    margin: 0;
   }
 }
